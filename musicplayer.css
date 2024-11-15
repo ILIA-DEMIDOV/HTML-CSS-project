@@ -1,0 +1,645 @@
+/* Сброс стилей (Reset CSS) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+/* Основные стили для тела страницы */
+body {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    background: #ffffff;
+  }
+
+/* Стили для заголовков */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Стили для ссылок */
+a {
+    color: #008cba;
+    text-decoration: none;
+}
+
+/*a:hover {
+    text-decoration: underline;
+}
+
+/* Стили для шапки сайта */
+header {
+    background-color: #008cba;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+  /* Анимация при наведении курсора */
+  .logo-button-container {
+    display: inline-block;
+    padding: 5px 0px; /* Уменьшение padding в два раза */
+    border-radius: 8px; /* Скругление углов остаётся таким же */
+    text-decoration: none; /* Убираем подчеркивание текста */
+    background-color: #e4b50d00; /* Цвет фона кнопки */
+    transition: all 0.3s ease; /* Плавный переход для всех изменений */
+    transform: scale(0.7); /* Уменьшение размера контейнера в два раза */
+}
+
+/* Стили для изображения внутри кнопки */
+.logo-button img {
+    display: block; /* Убирает отступы вокруг картинки */
+    width: 60%; /* Уменьшение ширины изображения в два раза */
+    height: auto; /* Сохраняем пропорции изображения */
+}
+
+/* Анимация при наведении курсора */
+.logo-button-container:hover {
+    background-color: #b34b0000; /* Изменение цвета фона при наведении */
+    transform: scale(0.85); /* Увеличение кнопки при наведении */
+}
+
+.logo-button:active {
+    transform: scale(0.65); /* Уменьшение кнопки при клике */
+}
+
+
+.navigation_title_main {
+    display: block;
+    min-width: 200px;
+    font-weight: 400; /* Новый вес шрифта */
+    line-height: 35.07px; /* Новая высота строки */
+    font-size: 30px; /* Новый размер шрифта */
+    text-decoration: none;
+    color: rgb(251, 249, 249);
+    font-family: 'Karla', sans-serif; /* Новый шрифт Karla */
+    text-align: left; /* Выравнивание текста по левому краю */
+    transition: color 0.3s ease;
+}
+.navigation_title_main_2{
+    display: block;
+    min-width: 200px;
+    font-weight: 500; /* Новый вес шрифта */
+    line-height: 37.07px; /* Новая высота строки */
+    font-size: 35px; /* Новый размер шрифта */
+    text-decoration: none;
+    color: rgb(246, 169, 169);
+    font-family: 'Karla', sans-serif; /* Новый шрифт Karla */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.navigation_title_main:hover {
+    color: #ee4b00; /* Цвет ссылки при наведении (темно-серый) */
+      }
+/* Стили для навигации */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Основные стили для контента */
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Стили для футера */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.barcode-text {
+    font-family: 'Libre Barcode', cursive;
+    font-size: 100px; /* Измените размер шрифта по необходимости */
+    color: #000; /* Цвет текста */
+}
+.text_header {
+    margin: 0;
+    padding: 0;
+    padding-top: 190px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 40px;
+    font-family: 'Kenia', cursive; /* Добавление шрифта Kenia */
+}
+.container_header_text {
+    width: 450px;
+    padding-top: 164px;
+    padding-left: 122px;
+  }
+.header_text {
+    width: 290px;
+    margin: 0;
+    padding: 0;
+    padding-top: 175px;
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #FFFFFF
+  }
+.header_text_title {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kenia', cursive;
+    font-weight: 400;
+    font-size: 200px;
+    line-height: 150px;
+    color: #FFFFFF;
+  }
+
+.page_header {
+    display: flex;
+    width: 100%; /* Убедитесь, что ширина хедера занимает всю страницу */
+    padding: 20px 0; /* Отступы сверху и снизу */
+    background-color: #000000;
+  }
+
+.container_button {
+    display: flex;
+  }
+
+.button_list {
+    padding: 0;
+    margin: auto 0;
+    list-style: none;
+  }
+
+.button_itam {
+    width: 382px;  /* ширина формы кнопки */
+    height: 83px;  /* высота формы кнопки */
+    margin-top: 106px; /* отступ над кнопкой - так что если две кнопки друг над другом, то между ними будет отступ */
+    background-image: linear-gradient(to right, #B13E18 1%, #F3501A 100%); /* заполненный цвет формы кнопки */
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3); /* тень кнопки */
+    text-align: center; /* расположение текста по центру */
+    position: relative; /* Устанавливаем позиционирование для правильного расположения псевдоэлементов */
+    overflow: hidden; /* Прячем все, что выходит за пределы кнопки, чтобы не было "размытых" краёв при увеличении */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Добавляем плавный переход для трансформации и тени */}
+
+
+.button_itam:hover { /* Не хватает закрывающей скобки здесь */
+    transform: scale(1.1);
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.4);
+}
+.image_effect{transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.image_effect:hover { /* Не хватает закрывающей скобки здесь */
+    transform: scale(1.1);
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.4);}
+    .container_decstop_images {
+        display: inline-block; /* Это позволяет использовать картинку как кнопку */
+        overflow: hidden; /* Чтобы картинка не выходила за пределы контейнера при увеличении */
+    }
+
+
+
+    .decstop_button {
+        display: inline-block; /* Устанавливает элемент как встроенный блок, что позволяет задавать ширину и высоту, а также размещать его в строке с другими элементами */
+        padding: 13px 70px; /* Устанавливает внутренние отступы элемента: 13 пикселей сверху и снизу, 70 пикселей слева и справа - что делает текст по середине */
+        font-family: 'Karla', sans-serif; /* Определяет шрифт текста внутри элемента. В данном случае используется шрифт 'Karla', и если он не доступен, то применяется sans-serif */
+        font-weight: 400; /* Задаёт толщину шрифта. Значение 400 соответствует обычному (нормальному) весу шрифта */
+        font-size: 40px; /* Устанавливает размер шрифта в 40 пикселей */
+        line-height: 47px; /* Определяет высоту строки. Это расстояние между базовыми линиями соседних строк текста, в данном случае 47 пикселей */
+        color: #FFFFFF; /* Задаёт цвет текста в элементе. Значение #FFFFFF соответствует белому цвету */
+        background: none; /* Убирает любой фон у элемента, делая его прозрачным */
+        border: none; /* Убирает любые границы у элемента */
+        cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+        position: relative; /* Чтобы элементы внутри кнопки позиционировались относительно неё */
+        z-index: 1; /* Обеспечивает, что текст будет отображаться поверх любых других элементов */
+    }
+
+    .main_decstop_1 {
+        background-image: linear-gradient(#D53005 0%, #000000 50%);
+        padding: 40px; /* Увеличивает внутренние отступы вокруг содержимого секции */
+    text-align: center; /* Центрирует текст внутри секции */
+      }
+      .main_decstop_11 {
+        background-color: #D53005; /* Устанавливает цвет фона как #D53005 */
+        display: flex; /* Включаем Flexbox для контейнера секции */
+        align-items: flex-start; /* Выравнивание по верхнему краю */
+        justify-content: space-between; /* Распределение пространства между текстом и изображением */
+        padding: 30px 80px;
+    }
+
+      .main_decstop_1_text {
+        width: 970px;
+        margin: 0 auto;
+        padding-top: 358px;
+        color: #FFFFFF;
+        font-family: 'Karla', sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 35px;
+        margin-top: 20px; /* Отступ сверху для абзаца */
+      }
+      .container_button_2 {
+        display: flex; /* Используем Flexbox для кнопок */
+    flex-direction: column; /* Кнопки располагаются в колонке */
+    align-items: flex-start; /* Выравнивание кнопок по левому краю */
+    margin-top: 20px; /* Отступ сверху для кнопок */}
+
+    .button_list_2 {
+        padding: 0;
+        margin: auto 0;
+        list-style: none;
+    }
+
+    .button_itam_2 {
+        width: 300px;  /* ширина формы кнопки */
+        height: 70px;  /* высота формы кнопки */
+        margin-top: 46px; /* отступ над кнопкой - так что если две кнопки друг над другом, то между ними будет отступ */
+        background-color: black; /* Черный фон для кнопки */
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3); /* тень кнопки */
+        text-align: center; /* расположение текста по центру */
+        position: relative; /* Устанавливаем позиционирование для правильного расположения псевдоэлементов */
+        overflow: hidden; /* Прячем все, что выходит за пределы кнопки, чтобы не было "размытых" краёв при увеличении */
+        transition: box-shadow 0.3s ease, color 0.3s ease; /* Добавляем плавный переход для тени и цвета текста */
+        border-radius: 50px; /* Округление углов для создания овальной формы */
+        color: #FFFFFF; /* Белый цвет текста по умолчанию */
+        font-size: 24px; /* Размер шрифта для кнопки */
+        display: flex; /* Используем flexbox для центрирования текста внутри кнопки */
+        align-items: center; /* Центрируем текст по вертикали */
+        justify-content: center; /* Центрируем текст по горизонтали */
+    }
+
+
+    .button_itam_2:hover {
+        box-shadow: 8px 8px 15px rgba(0,0,0,0.4); /* Увеличиваем тень для эффекта глубины при наведении */
+        color: #F3501A; /* Оранжевый цвет текста при наведении */
+    }
+.button_itam_2:hover a {
+    color: #F3501A; /* Оранжевый цвет текста внутри кнопки при наведении */
+}
+
+.decstop_button_2 {
+    display: inline-block; /* Устанавливает элемент как встроенный блок, что позволяет задавать ширину и высоту, а также размещать его в строке с другими элементами */
+    padding: 13px 40px; /* Устанавливает внутренние отступы элемента: 13 пикселей сверху и снизу, 40 пикселей слева и справа */
+    font-family: 'Karla', sans-serif; /* Определяет шрифт текста внутри элемента */
+    font-weight: 400; /* Задаёт толщину шрифта */
+    font-size: 18px; /* Устанавливает размер шрифта */
+    line-height: 35px; /* Определяет высоту строки */
+    color: #FFFFFF; /* Белый цвет текста по умолчанию */
+    background: none; /* Убирает любой фон у элемента, делая его прозрачным */
+    border: none; /* Убирает любые границы у элемента */
+    cursor: pointer; /* Меняет вид курсора на указатель */
+    position: relative; /* Чтобы элементы внутри кнопки позиционировались относительно неё */
+    z-index: 1; /* Обеспечивает, что текст будет отображаться поверх любых других элементов */
+}
+
+.decstop_button_23 {
+    display: inline-block; /* Устанавливает элемент как встроенный блок, что позволяет задавать ширину и высоту, а также размещать его в строке с другими элементами */
+    padding: 13px 40px; /* Устанавливает внутренние отступы элемента: 13 пикселей сверху и снизу, 40 пикселей слева и справа */
+    font-family: 'Karla', sans-serif; /* Определяет шрифт текста внутри элемента */
+    font-weight: 400; /* Задаёт толщину шрифта */
+    font-size: 18px; /* Устанавливает размер шрифта */
+    line-height: 35px; /* Определяет высоту строки */
+    color: #080606; /* Белый цвет текста по умолчанию */
+    background: none; /* Убирает любой фон у элемента, делая его прозрачным */
+    border: none; /* Убирает любые границы у элемента */
+    cursor: pointer; /* Меняет вид курсора на указатель */
+    position: relative; /* Чтобы элементы внутри кнопки позиционировались относительно неё */
+    z-index: 1; /* Обеспечивает, что текст будет отображаться поверх любых других элементов */
+}
+.button_itam_23 {
+    width: 300px;  /* ширина формы кнопки */
+    height: 70px;  /* высота формы кнопки */
+    margin-top: 46px; /* отступ над кнопкой - так что если две кнопки друг над другом, то между ними будет отступ */
+    background-color: rgb(244, 238, 238); /* Черный фон для кнопки */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3); /* тень кнопки */
+    text-align: center; /* расположение текста по центру */
+    position: relative; /* Устанавливаем позиционирование для правильного расположения псевдоэлементов */
+    overflow: hidden; /* Прячем все, что выходит за пределы кнопки, чтобы не было "размытых" краёв при увеличении */
+    transition: box-shadow 0.3s ease, color 0.3s ease; /* Добавляем плавный переход для тени и цвета текста */
+    border-radius: 50px; /* Округление углов для создания овальной формы */
+    color: #FFFFFF; /* Белый цвет текста по умолчанию */
+    font-size: 24px; /* Размер шрифта для кнопки */
+    display: flex; /* Используем flexbox для центрирования текста внутри кнопки */
+    align-items: center; /* Центрируем текст по вертикали */
+    justify-content: center; /* Центрируем текст по горизонтали */
+}
+ .button_itam_23:hover {
+    box-shadow: 8px 8px 15px rgba(0,0,0,0.4); /* Увеличиваем тень для эффекта глубины при наведении */
+    color: #F3501A; /* Оранжевый цвет текста при наведении */
+}
+.button_itam_23:hover a {
+color: #F3501A; /* Оранжевый цвет текста внутри кнопки при наведении */}
+
+.container_decstop_text {
+    width: 431px;
+    margin: 0;
+    margin-left: -90px;
+    margin-top: 135px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.decstop_text_1 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 17px;
+    color: #FFFFFF;
+    line-height: 32px;
+}
+
+.decstop_text {
+    margin: 0;
+    padding: 0;
+}
+
+.decstop_text_underlined {
+    color: #040404; /* Изначальный цвет текста */
+    text-decoration: underline; /* Подчеркивание текста */
+    transition: color 0.3s ease; /* Плавный переход для изменения цвета */
+    cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+
+}
+
+.decstop_text_underlined:hover {
+    color: #b3ac74; /* Оранжевый цвет текста при наведении */
+    cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */}
+.decstop_text_underlined_2 {
+        color: #040404; /* Изначальный цвет текста */
+        text-decoration: underline; /* Подчеркивание текста */
+        transition: color 0.3s ease,text-decoration 1s ease; /* Плавный переход для изменения цвета */
+        cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+        display: block;
+    min-width: 200px;
+    font-weight: 500; /* Новый вес шрифта */
+    line-height: 37.07px; /* Новая высота строки */
+    font-size: 35px; /* Новый размер шрифта */
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    font-family: 'Karla', sans-serif; /* Новый шрифт Karla */
+    text-align: left; /* Выравнивание текста по левому краю */
+
+}
+.decstop_text_underlined_2:hover {
+    color: #000000; /* Оранжевый цвет текста при наведении */
+    cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+    text-decoration: underline;}
+    .decstop_text_underlined_3 {
+        color: #f9f9f9; /* Изначальный цвет текста */
+       /*text-decoration: underline; /* Подчеркивание текста */
+        transition: color 0.1s ease; /* Плавный переход для изменения цвета */
+        cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+
+    }
+    .decstop_text_underlined_3:hover {
+        color: #f85713; /* Оранжевый цвет текста при наведении */
+        cursor: pointer; /* Меняет вид курсора на указатель (обычно используется для интерактивных элементов, таких как кнопки) */
+        }
+
+.content {
+    display: flex; /* Включаем Flexbox для размещения элементов внутри секции */
+    flex-direction: column; /* Размещаем элементы в колонку */
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    justify-content: space-between;
+}
+
+.container_decstop_images_2 {
+    flex-shrink: 0; /* Предотвращает уменьшение размера контейнера изображения */
+}
+
+.container_decstop_images_2 img {
+    max-width: 100%; /* Максимальная ширина изображения */
+    height: auto; /* Высота изображения сохраняется пропорционально ширине */
+}
+.text-and-buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание текста и кнопок по левому краю */
+}
+.header_text_title_2 {
+    margin-right: 400;
+    padding-right: 600  ;
+    font-family: 'Kenia', cursive;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 110px;
+    color: #FFFFFF;/* Убираем отступы */
+}
+.header_text_2 {
+    font-size: 1.25rem; /* Размер шрифта для параграфа */
+    margin: 0; /* Убираем отступы */
+   width: 290px;
+
+padding: 0;
+padding-top: 175px;
+font-family: 'Istok Web', sans-serif;
+font-weight: 400;
+font-size: 20px;
+line-height: 29px;
+color: #FFFFFF  }
+
+.site-menu__sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 62px 76px 452px;
+    width: 926px;
+    height: 148px;
+
+}
+
+.page_footer {
+    background: linear-gradient(180deg, #D53005 5%, #000000 40%);
+    width: 100%;
+    padding: 20px 0; /* отступы сверху и снизу */
+    border: none;
+    background-color: #000; /* Черный цвет */
+    color: white;
+}
+
+.footer__container {
+    width: 100%; /* расширить контейнер футера на всю ширину экрана */
+    max-width: none; /* отключить ограничение максимальной ширины */
+    padding: 0 15px; /* добавить отступы по бокам, если нужно */
+    box-sizing: border-box; /* чтобы padding не увеличивал ширину */
+    border: none;
+}
+
+.site-menu {
+    display: flex;
+    justify-content: space-between; /* распределяет элементы по всей ширине */
+    flex-wrap: wrap; /* чтобы меню перенаправлялось, если не помещается */
+    border: none;
+}
+
+.site-menu__col {
+    flex: 1 1 20%; /* колонки, которые занимают 30% ширины */
+    margin: 0 30px; /* отступы между колонками */
+    list-style-type: none; /* Убираем маркеры и у колонок */
+    border: none;
+}
+
+.site-menu__list {
+    list-style-type: none; /* Убираем точки у списка */
+    padding-left: 30; /* Убираем отступ слева */
+    margin: 20; /* Убираем внешние отступы */
+    border: none;
+}
+
+.site-menu__item {
+    font-family: Montserrat Regular;
+    font-size: 16px;
+    font-weight: 300;
+    margin:30px;
+    line-height: 10px;
+    text-align: right;
+    color: #fff;
+
+}
+
+.site-menu__title {
+    margin-bottom: 50px;
+    list-style-type: none; /* Убираем точки */
+    border: none;
+    margin: 20px;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.site-menu__link {
+    padding: 30px 0;
+
+}
+.last-text{
+    width: 1400px;
+    min-height: 100px;
+    margin:0;
+    padding: 0;
+    padding-left: 5px;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.last-text-2{
+    font-size: 16px;
+    padding-top: 60px;
+}
+.link_footer {
+    font-family: Montserrat Regular;
+    font-size: 14px;
+    font-weight: 200;
+    line-height: 39.5px;
+    text-align: right;
+    color: #fff;
+}
+
+.banner_footer {
+    font-family: Kenia;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 60px;
+    text-align: left;
+    width: 138px;
+    height: 100px;
+    padding-left: 110px;
+    padding-top: 50px;
+    padding-bottom: 120px;
+}
+
+.footer_text {
+    padding-left: 106px;
+    list-style-type: none;
+    height: 18px;
+    display: flex;
+    gap: 99px;
+    font-family: Montserrat Impact;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18.29px;
+    text-align: left;
+    padding-bottom: 74px;
+    padding-left: 170px;
+}
+.iphone_with_cable {
+    position: relative;
+    width: 500px;
+    height: 888px;
+}
+.image_iphone {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.image_cable {
+    position: absolute;
+    bottom: -8px;
+    left: 50px;
+    height: 158px;
+    z-index: 1;
+}
+#phone {
+    position: absolute; /* Позиционируем картинку абсолютно */
+    top: 100px; /* Устанавливаем вертикальное положение */
+    right: -900px; /* Сначала картинка находится далеко справа */
+    opacity: 0; /* Начальный прозрачность (не видимая) */
+    transition: all 1s ease-in-out; /* Плавное изменение всех свойств за 1 секунду */
+  }
+  #phone.show {
+    right: 50%; /* Центрируем картинку по горизонтали */
+    transform: translateX(50%); /* Подправляем картинку для точного позиционирования */
+    opacity: 1; /* Делаем картинку видимой */
+  }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="musicplayer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&family=Karla&family=Kenia&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Music player</title>
+</head>
+<body>
+    <header class="page_header">
+        <script>
+            // Количество звезд
+            const numberOfStars = 150;
+
+            for (let i = 0; i < numberOfStars; i++) {
+                const star = document.createElement('div');
+                star.style.position = 'absolute';
+                star.style.backgroundColor = 'white';
+                star.style.borderRadius = '50%';
+                star.style.opacity = Math.random() * 0.6 + 0.4; // случайная прозрачность от 0.4 до 1
+                star.style.width = Math.random() * 3 + 'px'; // случайный размер от 1px до 3px
+                star.style.height = star.style.width;
+                star.style.top = Math.random() * 100 + 'vh'; // случайное положение по вертикали
+                star.style.left = Math.random() * 100 + 'vw'; // случайное положение по горизонтали
+                document.body.appendChild(star);
+            }
+        </script>
+        <div class="container_header">
+            <nav class="navigation">
+                <a href="#">
+                    <div class="logo-button-container">
+                        <a href="#" class="logo-button">
+                            <img src="/Users/macpro/Documents/HTML CSS study/project music player/images/logo1.png" alt="Логотип" width="23" height="23">
+                        </a>
+                    </div>
+                </a>
+                <ul>
+                    <li>
+                        <a href="#" class="navigation_title_main" style="padding-left: 80px">Music</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation_title_main" style="margin-right: 50px;">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation_title_main">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="navigation_title_main">Store</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container_button">
+                <div class="container_header_text">
+                    <h1 class="header_text_title_2">MUSIC PLAYER</h1>
+                    <p class="header_text_2">American company formed in 2002 in Boston, Massachusetts</p>
+                </div>
+                <div class="iphone_with_cable">
+                    <a href="#">
+                        <img src="images/Flat_iPhone_1.png" class="image_iphone" alt="Плеер" width="800" height="" style="padding-left: 300px; padding-top: 100px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент сайта -->
+    <main>
+        <section class="main_decstop_11" style="background: linear-gradient(180deg, #000000 5%, #D53005 20%);" id="home">
+            <a class="decstop_text_underlined_2" style="padding-left: 80px; padding-top: 30px;">Music</a>
+            <div class="container_button">
+                <ul class="button_list">
+                    <li class="button_itam"> <!-- форма кнопки -->
+                        <button class="decstop_button" type="button">Listen Now !</button> <!-- кнопка внутри формы кнопки -->
+                    </li>
+                    <li class="button_itam"> <!-- Форма кнопки -->
+                        <button class="decstop_button" type="button">Find a song...</button> <!-- кнопка внутри формы кнопки -->
+                    </li>
+                </ul>
+                <div class="container_decstop_images">
+                    <img class="image_effect" src="images/seyi-ariyo-1.png" alt="Картинка с группой" width="936" height="667">
+                </div>
+            </div>
+        </section>
+        <section class="main_decstop_1">
+            <a class="decstop_text_underlined_2" style="margin-left: 110px; padding-top: 30px;">About</a>
+            <p class="main_decstop_1_text" style ="padding-bottom: 200px">MusicPlayer gives you instant access to millions of songs – from old favorites to the latest hits. Just hit play to stream anything you like.</p>
+        </section>
+        <section class="main_decstop_11" style="background: linear-gradient(180deg, #000000 5%, #D53005 40%);" id="home">
+            <a class="decstop_text_underlined_2" style="padding-left: 80px; padding-top: 30px;">Store</a>
+            <div class="container_button">
+                <ul class="button_list_2">
+                    <li class="button_itam_2">
+                        <a href="#" class="decstop_button_2">Download Windows x64</a>
+                    </li>
+                    <li class="button_itam_23">
+                        <a href="#" class="decstop_button_23">Download MacOS</a>
+                    </li>
+                    <li>
+                        <div class="container_decstop_text">
+                            <h2 class="decstop_text_1">Нужна предыдущая версия MPlayer?</h2>
+                            <p class="decstop_text">Вы можете скачать одну из предыдущих версий MPlayer, которая совместима с нужной вам версией операционной системы и определёнными устройствами.
+                                <br> <u class="decstop_text_underlined">Выберите предыдущую версию MPlayer</u>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="container_decstop_images">
+                    <img src="images/Device-Macbook Pro.png" alt="Картинка с группой" width="936" height="667">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer>
+        <div class="page_footer">
+            <ul class="site-menu__sections">
+                <li class="site-menu__col">
+                    <h3 class="site-menu__title">Mplayer Store</h3>
+                    <ul class="site-menu__list">
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Варианты оплаты</a>
+                        </li>
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3" style="padding-top: 30px; white-space: nowrap;">Помощь при покупке</a>
+                        </li>
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Состояние заказа</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="site-menu__col">
+                    <h3 class="site-menu__title">Ценности Mplayer</h3>
+                    <ul class="site-menu__list">
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Уникальный доступ</a>
+                        </li>
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Окружающая среда</a>
+                        </li>
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Конфиденциальность</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="site-menu__col">
+                    <h3 class="site-menu__title">Учетная запись</h3>
+                    <ul class="site-menu__list">
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3" style="padding-left: 50px; padding-top: 30px; white-space: nowrap;">Управление Mplayer ID</a>
+                        </li>
+                        <li class="site-menu__item">
+                            <a href="#" class="decstop_text_underlined_3">Учетная запись MPlayer Store</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="banner_footer">MUSIC PLAYER</h3>
+            <p class="last-text-2" style="font-size: 12;">© 2024 ILIA DEMIDOV INFINITY LLC. All Rights Reserved. ILIA DEMIDOV Name, Logos And Related Marks Are Trademarks Of ILIA DEMIDOV, LLC. All Other Trademarks Are The Property Of Their Respective Owners.</p>
+        </div>
+    </footer>
+</body>
+</html>
